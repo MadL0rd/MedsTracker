@@ -44,7 +44,7 @@ extension BarcodeMedsScanerViewController: BarcodeScannerCodeDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
         print("code: \(code)\ntype: \(type)")
         
-        viewModel.findMeds(barcode: code) { result in
+        viewModel.findMeds(barcode: code) { [ weak self ] result in
             switch result {
             case .success(let data):
                 guard !data.isEmpty
@@ -53,6 +53,9 @@ extension BarcodeMedsScanerViewController: BarcodeScannerCodeDelegate {
                     return
                 }
                 AlertManager.showSuccessHUD(on: controller.view)
+                controller.showSuccessAlert(with: data.first!.title, message: data.first!.text) {
+                    self?.coordinator.dismiss()
+                }
                 print(data)
             case .failure(let error):
                 print(error)

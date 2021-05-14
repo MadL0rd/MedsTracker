@@ -9,8 +9,8 @@ import UIKit
 
 final class AddMedsTypeSelectorView: UIView {
     
-    let padding: CGFloat = UIConstants.screenBounds.width * 0.07
-    let backgroundHeight: CGFloat = UIConstants.screenBounds.width * 0.5
+    let padding: CGFloat = UIConstants.screenBounds.width * 0.08
+    let backgroundHeight: CGFloat = UIConstants.screenBounds.width * 0.6
     
     let backgroundView = UIView()
     let cutomMedicineButton = ButtonWithTouchSize()
@@ -73,7 +73,7 @@ final class AddMedsTypeSelectorView: UIView {
     private func setupButton(button: ButtonWithTouchSize, image: UIImage?) {
         backgroundView.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 50
+        button.layer.cornerRadius = 20
         button.backgroundColor = R.color.main()
         button.tintColor = R.color.tintColorLight()
         
@@ -89,12 +89,12 @@ final class AddMedsTypeSelectorView: UIView {
             
             cutomMedicineButton.widthAnchor.constraint(equalToConstant: (UIConstants.screenBounds.width - (padding * 3)) / 2),
             cutomMedicineButton.heightAnchor.constraint(equalTo: cutomMedicineButton.widthAnchor),
-            cutomMedicineButton.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: padding),
+            cutomMedicineButton.centerYAnchor.constraint(equalTo: backgroundView.centerYAnchor, constant: padding / -2),
             cutomMedicineButton.leftAnchor.constraint(equalTo: backgroundView.leftAnchor, constant: padding),
             
             barcodeButton.widthAnchor.constraint(equalTo: cutomMedicineButton.widthAnchor),
             barcodeButton.heightAnchor.constraint(equalTo: cutomMedicineButton.widthAnchor),
-            barcodeButton.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: padding),
+            barcodeButton.centerYAnchor.constraint(equalTo: cutomMedicineButton.centerYAnchor),
             barcodeButton.rightAnchor.constraint(equalTo: backgroundView.rightAnchor, constant: -padding)
         ])
     }
