@@ -1,0 +1,35 @@
+
+// LimitatableTextView
+"limit" = "limit";
+"character" = "character";
+"characterLess5" = "characters";
+"characters" = "characters";
+
+// Network
+"cannotParceData" = "Cannot parce data";
+"wrongCode" = "Wrong code";
+"wrongEmail" = "Wrong email";
+"unknownError" = "Unknown error";
+"errorSendPhoto" = "Failed to send photo";
+"badToken" = "Can not get access to your account";
+"badRoute" = "Route not found";
+"badRequestDataFormat" = "Internal server error or bad request data format";
+
+// Alerts
+"error" = "Error!";
+"ok" = "OK";
+"cancel" = "Cancel";
+"continue" = "Continue";
+"select" = "Select";
+"choose color" = "Choose color";
+
+// Other
+"announcementText" = "Will be added in the next version";
+
+// Saved meds
+"addNewMedicine" = "Add";
+"thereIsNoSavedMedsNow" = "There is no saved meds now...";
+
+// Meds search
+"medicineNotFound" = "Sorry, we can not find your medicine";
+"success" = "Sucess!";
