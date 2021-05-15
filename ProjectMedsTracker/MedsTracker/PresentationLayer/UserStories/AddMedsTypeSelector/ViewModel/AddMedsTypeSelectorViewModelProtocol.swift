@@ -7,4 +7,5 @@
 
 protocol AddMedsTypeSelectorViewModelProtocol: AnyObject {
     
+    var output: AddMedsTypeSelectorOutput? { get }
 }

@@ -1,0 +1,13 @@
+//
+//  MedicineEditorInput.swift
+//  MedsTracker
+//
+//  Created by Антон Текутов on 14.05.2021.
+//
+
+protocol CustomizableMedicineEditorViewModel: AnyObject {
+    
+    var output: MedicineEditorOutput? { get set }
+    
+    func setMedicine(_ medicine: Medicine)
+}

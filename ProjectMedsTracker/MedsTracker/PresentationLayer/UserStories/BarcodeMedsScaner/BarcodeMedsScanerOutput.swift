@@ -7,4 +7,5 @@
 
 protocol BarcodeMedsScanerOutput: AnyObject {
     
+    func returnMedicine(_ medicine: Medicine) 
 }

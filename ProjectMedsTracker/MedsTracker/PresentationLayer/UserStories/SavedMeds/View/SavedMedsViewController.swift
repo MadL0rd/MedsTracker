@@ -14,6 +14,8 @@ final class SavedMedsViewController: UIViewController, UIViewControllerTransitio
     
     private let vibroGeneratorLight = UIImpactFeedbackGenerator(style: .light)
     
+    var savedMeds = [Medicine]()
+    
     private var _view: SavedMedsView {
         return view as! SavedMedsView
     }
@@ -30,23 +32,14 @@ final class SavedMedsViewController: UIViewController, UIViewControllerTransitio
 
     private func configureSelf() {
         
-        let addButtonText = R.string.localizable.addNewMedicine()
-        let addButtonFont = R.font.gilroyRegular(size: 14)!
-        let textWidth = addButtonText.width(with: addButtonFont)
-        let addMedicineButton = ButtonWithTouchSize()
-        addMedicineButton.frame = CGRect(x: 0,
-                                         y: 0,
-                                         width: textWidth + 14,
-                                         height: 24)
-        addMedicineButton.backgroundColor = R.color.main()
-        addMedicineButton.titleLabel?.font = addButtonFont
-        addMedicineButton.setTitleColor(R.color.tintColorLight(), for: .normal)
-        addMedicineButton.setTitle(addButtonText, for: .normal)
-        addMedicineButton.setTitle(addButtonText, for: .selected)
-        addMedicineButton.setDefaultAreaPadding()
-        addMedicineButton.addTarget(self, action: #selector(addMedicine(sender:)), for: .touchUpInside)
-        let menuBarItem = UIBarButtonItem(customView: addMedicineButton)
+        _view.savedMedsTable.dataSource = self
+        _view.savedMedsTable.delegate = self
+
+        _view.addMedicineButton.addTarget(self, action: #selector(addMedicine(sender:)), for: .touchUpInside)
+        let menuBarItem = UIBarButtonItem(customView: _view.addMedicineButton)
         navigationItem.rightBarButtonItem = menuBarItem
+        
+        reloadData()
     }
     
     // MARK: - UI elements actions
@@ -54,6 +47,84 @@ final class SavedMedsViewController: UIViewController, UIViewControllerTransitio
     @objc private func addMedicine(sender: UIButton) {
         sender.tapAnimation()
         vibroGeneratorLight.impactOccurred()
-        coordinator.openModule(.addMedsTypeSelector, openingMode: .present)
+        coordinator.openModuleWithOutput(.addMedsTypeSelector(output: self),
+                                         openingMode: .present)
+    }
+    
+    func reloadData() {
+        _view.savedMedsTable.isHidden = savedMeds.isEmpty
+        _view.savedMedsTable.reloadData()
+    }
+}
+
+// MARK: - Meds table management
+
+extension SavedMedsViewController: UITableViewDataSource, UITableViewDelegate, SavedMedicineTableViewCellDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return savedMeds.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SavedMedicineTableViewCell.identifier,
+                                                 for: indexPath) as! SavedMedicineTableViewCell
+        
+        cell.delegate = self
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        if let medicine = savedMeds[exist: indexPath.row] {
+            cell.setContent(medicine, index: indexPath.row)
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func takeMedicine(_ cell: SavedMedicineTableViewCell, countMedsToTake: Int) {
+        guard countMedsToTake != 0,
+              let indexPath = _view.savedMedsTable.indexPath(for: cell)
+        else { return }
+        savedMeds[indexPath.row].itemsCount -= countMedsToTake
+        if savedMeds[indexPath.row].itemsCount <= 0 {
+            savedMeds[indexPath.row].itemsCount = 0
+        }
+        VibroGenerator.heavy.impactOccurred()
+        cell.tapAnimation()
+        cell.setContent(savedMeds[indexPath.row], index: indexPath.row)
+    }
+}
+
+// MARK: - AddMedsTypeSelectorOutput
+
+extension SavedMedsViewController: AddMedsTypeSelectorOutput {
+    
+    func returnTypeOfMedicineToAdd(_ type: TypeOfMedicineToAdd) {
+        switch type {
+        case .barcode:
+            coordinator.openModuleWithOutput(.barcodeMedsScaner(output: self))
+        case .custom:
+            coordinator.openModuleWithOutput(.medicineEditor(output: self))
+        }
+    }
+}
+
+// MARK: - BarcodeMedsScanerOutput
+
+extension SavedMedsViewController: BarcodeMedsScanerOutput {
+    
+    func returnMedicine(_ medicine: Medicine) {
+        savedMeds.append(medicine)
+        reloadData()
+    }
+}
+
+// MARK: - MedicineEditorOutput
+
+extension SavedMedsViewController: MedicineEditorOutput {
+    
+    func returnEditedMedicine(_ medicine: Medicine) {
+        print(medicine)
     }
 }

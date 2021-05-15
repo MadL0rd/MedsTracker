@@ -7,4 +7,5 @@
 
 protocol AddMedsTypeSelectorOutput: AnyObject {
     
+    func returnTypeOfMedicineToAdd(_ type: TypeOfMedicineToAdd)
 }

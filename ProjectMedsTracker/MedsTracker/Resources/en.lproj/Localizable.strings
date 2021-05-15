@@ -29,6 +29,9 @@
 // Saved meds
 "addNewMedicine" = "Add";
 "thereIsNoSavedMedsNow" = "There is no saved meds now...";
+"takeMeds" = "Take";
+"shelfLifeDate" = "Shelf life";
+"pcs" = "pcs.";
 
 // Meds search
 "medicineNotFound" = "Sorry, we can not find your medicine";

@@ -37,7 +37,12 @@ class UIStyleManager {
         controller.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         controller.navigationBar.shadowImage = UIImage()
         controller.navigationBar.isTranslucent = true
-        controller.navigationBar.tintColor = R.color.main()
+        controller.navigationBar.tintColor = R.color.main1()
+        
+        let imgBack = R.image.arrowLeft()
+        controller.navigationBar.backIndicatorImage = imgBack
+        controller.navigationBar.backIndicatorTransitionMaskImage = imgBack
+        controller.navigationBar.topItem?.backButtonTitle = ""
     }
     
     // MARK: - UITextField

@@ -45,6 +45,8 @@ extension BarcodeMedsScanerViewController: BarcodeScannerCodeDelegate {
         print("code: \(code)\ntype: \(type)")
         
         viewModel.findMeds(barcode: code) { [ weak self ] result in
+            guard let self = self
+            else { return }
             switch result {
             case .success(let data):
                 guard !data.isEmpty
@@ -52,11 +54,11 @@ extension BarcodeMedsScanerViewController: BarcodeScannerCodeDelegate {
                     controller.resetWithError(message: R.string.localizable.medicineNotFound())
                     return
                 }
-                AlertManager.showSuccessHUD(on: controller.view)
-                controller.showSuccessAlert(with: data.first!.title, message: data.first!.text) {
-                    self?.coordinator.dismiss()
-                }
-                print(data)
+                
+                AlertManager.showSuccessHUD(on: self.navigationController!.view)
+                self.viewModel.output?.returnMedicine(data.first!.medicine)
+                self.coordinator.dismiss()
+                
             case .failure(let error):
                 print(error)
                 controller.resetWithError(message: R.string.localizable.medicineNotFound())

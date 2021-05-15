@@ -41,7 +41,7 @@ final class AddMedsTypeSelectorViewController: UIViewController {
         }
         
         _view.barcodeButton.addTarget(self, action: #selector(buttonDidTapped(sender:)), for: .touchUpInside)
-        _view.cutomMedicineButton.addTarget(self, action: #selector(buttonDidTapped(sender:)), for: .touchUpInside)
+        _view.customMedicineButton.addTarget(self, action: #selector(buttonDidTapped(sender:)), for: .touchUpInside)
     }
     
     private func dismissThisController() {
@@ -67,7 +67,10 @@ final class AddMedsTypeSelectorViewController: UIViewController {
         
         switch sender {
         case _view.barcodeButton:
-            coordinator.openModule(.barcodeMedsScaner)
+            viewModel.output?.returnTypeOfMedicineToAdd(.barcode)
+            dismissThisController()
+        case _view.customMedicineButton:
+            viewModel.output?.returnTypeOfMedicineToAdd(.custom)
             dismissThisController()
         default:
             break

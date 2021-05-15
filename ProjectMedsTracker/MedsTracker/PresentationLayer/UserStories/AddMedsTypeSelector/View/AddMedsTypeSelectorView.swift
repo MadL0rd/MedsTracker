@@ -13,7 +13,7 @@ final class AddMedsTypeSelectorView: UIView {
     let backgroundHeight: CGFloat = UIConstants.screenBounds.width * 0.6
     
     let backgroundView = UIView()
-    let cutomMedicineButton = ButtonWithTouchSize()
+    let customMedicineButton = ButtonWithTouchSize()
     let barcodeButton = ButtonWithTouchSize()
 
     override init(frame: CGRect) {
@@ -64,8 +64,10 @@ final class AddMedsTypeSelectorView: UIView {
         backgroundView.isUserInteractionEnabled = true
         backgroundView.transform = .init(translationX: 0, y: backgroundHeight)
         
-        setupButton(button: cutomMedicineButton, image: R.image.custom())
+        setupButton(button: customMedicineButton, image: R.image.custom())
         setupButton(button: barcodeButton, image: R.image.barcode())
+        customMedicineButton.backgroundColor = R.color.main1()
+        barcodeButton.backgroundColor = R.color.main2()
 
         makeConstraints()
     }
@@ -74,7 +76,6 @@ final class AddMedsTypeSelectorView: UIView {
         backgroundView.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 20
-        button.backgroundColor = R.color.main()
         button.tintColor = R.color.tintColorLight()
         
         button.setImage(image, for: .normal)
@@ -87,14 +88,14 @@ final class AddMedsTypeSelectorView: UIView {
             backgroundView.widthAnchor.constraint(equalTo: widthAnchor),
             backgroundView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            cutomMedicineButton.widthAnchor.constraint(equalToConstant: (UIConstants.screenBounds.width - (padding * 3)) / 2),
-            cutomMedicineButton.heightAnchor.constraint(equalTo: cutomMedicineButton.widthAnchor),
-            cutomMedicineButton.centerYAnchor.constraint(equalTo: backgroundView.centerYAnchor, constant: padding / -2),
-            cutomMedicineButton.leftAnchor.constraint(equalTo: backgroundView.leftAnchor, constant: padding),
+            customMedicineButton.widthAnchor.constraint(equalToConstant: (UIConstants.screenBounds.width - (padding * 3)) / 2),
+            customMedicineButton.heightAnchor.constraint(equalTo: customMedicineButton.widthAnchor),
+            customMedicineButton.centerYAnchor.constraint(equalTo: backgroundView.centerYAnchor, constant: padding / -2),
+            customMedicineButton.leftAnchor.constraint(equalTo: backgroundView.leftAnchor, constant: padding),
             
-            barcodeButton.widthAnchor.constraint(equalTo: cutomMedicineButton.widthAnchor),
-            barcodeButton.heightAnchor.constraint(equalTo: cutomMedicineButton.widthAnchor),
-            barcodeButton.centerYAnchor.constraint(equalTo: cutomMedicineButton.centerYAnchor),
+            barcodeButton.widthAnchor.constraint(equalTo: customMedicineButton.widthAnchor),
+            barcodeButton.heightAnchor.constraint(equalTo: customMedicineButton.widthAnchor),
+            barcodeButton.centerYAnchor.constraint(equalTo: customMedicineButton.centerYAnchor),
             barcodeButton.rightAnchor.constraint(equalTo: backgroundView.rightAnchor, constant: -padding)
         ])
     }

@@ -7,5 +7,7 @@
 
 protocol BarcodeMedsScanerViewModelProtocol: AnyObject {
     
+    var output: BarcodeMedsScanerOutput? { get }
+    
     func findMeds(barcode: String, completion: @escaping FindMedsCompletion)
 }

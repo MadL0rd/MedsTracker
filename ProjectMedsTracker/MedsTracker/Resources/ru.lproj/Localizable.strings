@@ -29,6 +29,9 @@
 // Saved meds
 "addNewMedicine" = "Добавить";
 "thereIsNoSavedMedsNow" = "На данный момент нет сохраненных лекарств";
+"takeMeds" = "Принять";
+"shelfLifeDate" = "Годен до";
+"pcs" = "шт.";
 
 // Meds search
 "medicineNotFound" = "Лекарство не найдено";

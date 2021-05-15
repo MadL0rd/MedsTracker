@@ -14,6 +14,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case loading
     case addMedsTypeSelector
     case savedMeds
+    case medicineEditor
 
     func createModule() -> UIViewController {
         switch self {
@@ -25,6 +26,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return AddMedsTypeSelectorCoordinator.createModule()
         case .savedMeds: 
             return SavedMedsCoordinator.createModule()
+        case .medicineEditor: 
+            return MedicineEditorCoordinator.createModule()
         }
     }
 }
@@ -35,6 +38,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case loading(output: LoadingOutput)
     case addMedsTypeSelector(output: AddMedsTypeSelectorOutput)
     case savedMeds(output: SavedMedsOutput)
+    case medicineEditor(output: MedicineEditorOutput)
 
     func createModule() -> UIViewController {
         switch self {
@@ -55,6 +59,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .savedMeds(let output): 
             return SavedMedsCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .medicineEditor(let output): 
+            return MedicineEditorCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

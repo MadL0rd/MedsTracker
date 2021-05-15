@@ -22,7 +22,6 @@
 		8940645526122B7600DC682F /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940644E26122B7600DC682F /* NetworkErrors.swift */; };
 		8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940644F26122B7600DC682F /* DataRequestExecutable.swift */; };
 		8940645726122B7600DC682F /* CompletionTypealiasesDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940645026122B7600DC682F /* CompletionTypealiasesDefault.swift */; };
-		894064A226122D0100DC682F /* UserStoriesModulesAccounting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */; };
 		894064D82612308800DC682F /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064B32612308800DC682F /* AlertManager.swift */; };
 		894064D92612308800DC682F /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064B52612308800DC682F /* ColorPickerView.swift */; };
 		894064DA2612308800DC682F /* PickerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064B62612308800DC682F /* PickerViewManager.swift */; };
@@ -53,14 +52,6 @@
 		894064F42612308800DC682F /* ContentFittingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064D52612308800DC682F /* ContentFittingTableView.swift */; };
 		894064F52612308800DC682F /* TouchClearUIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064D62612308800DC682F /* TouchClearUIComponents.swift */; };
 		894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064D72612308800DC682F /* ButtonWithTouchSize.swift */; };
-		894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8940651F2612327B00DC682F /* LoadingViewModelProtocol.swift */; };
-		8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065202612327B00DC682F /* LoadingViewModel.swift */; };
-		8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065212612327B00DC682F /* LoadingOutput.swift */; };
-		8940652C2612327C00DC682F /* LoadingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065232612327B00DC682F /* LoadingCoordinator.swift */; };
-		8940652D2612327C00DC682F /* LoadingCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065242612327B00DC682F /* LoadingCoordinatorProtocol.swift */; };
-		8940652E2612327C00DC682F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065262612327B00DC682F /* LoadingView.swift */; };
-		8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065272612327B00DC682F /* LoadingViewController.swift */; };
-		894065302612327C00DC682F /* LoadingInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894065282612327B00DC682F /* LoadingInput.swift */; };
 		894065D726131BEF00DC682F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 894065D526131BEE00DC682F /* Localizable.strings */; };
 		894065E9261328E100DC682F /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E5261328E100DC682F /* Gilroy-Regular.ttf */; };
 		894065EA261328E100DC682F /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894065E6261328E100DC682F /* Gilroy-Light.ttf */; };
@@ -76,31 +67,7 @@
 		89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A502542E16200D482F6 /* ApplicationAssembly.swift */; };
 		89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A522542E16200D482F6 /* AppDelegate.swift */; };
 		89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A532542E16200D482F6 /* SceneDelegate.swift */; };
-		89F93754264DF6E400D38BBF /* SavedMedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9374A264DF6E400D38BBF /* SavedMedsViewModel.swift */; };
-		89F93755264DF6E400D38BBF /* SavedMedsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9374B264DF6E400D38BBF /* SavedMedsViewModelProtocol.swift */; };
-		89F93756264DF6E400D38BBF /* SavedMedsCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9374D264DF6E400D38BBF /* SavedMedsCoordinatorProtocol.swift */; };
-		89F93757264DF6E400D38BBF /* SavedMedsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9374E264DF6E400D38BBF /* SavedMedsCoordinator.swift */; };
-		89F93758264DF6E400D38BBF /* SavedMedsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9374F264DF6E400D38BBF /* SavedMedsOutput.swift */; };
-		89F93759264DF6E400D38BBF /* SavedMedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93751264DF6E400D38BBF /* SavedMedsViewController.swift */; };
-		89F9375A264DF6E400D38BBF /* SavedMedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93752264DF6E400D38BBF /* SavedMedsView.swift */; };
-		89F9375B264DF6E400D38BBF /* SavedMedsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93753264DF6E400D38BBF /* SavedMedsInput.swift */; };
 		89F9375D264DFAC200D38BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F9375C264DFAC200D38BBF /* LaunchScreen.storyboard */; };
-		89F93782264DFFA400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93778264DFFA400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift */; };
-		89F93783264DFFA400D38BBF /* AddMedsTypeSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93779264DFFA400D38BBF /* AddMedsTypeSelectorViewModel.swift */; };
-		89F93784264DFFA400D38BBF /* AddMedsTypeSelectorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9377A264DFFA400D38BBF /* AddMedsTypeSelectorInput.swift */; };
-		89F93785264DFFA400D38BBF /* AddMedsTypeSelectorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9377C264DFFA400D38BBF /* AddMedsTypeSelectorCoordinator.swift */; };
-		89F93786264DFFA400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9377D264DFFA400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift */; };
-		89F93787264DFFA400D38BBF /* AddMedsTypeSelectorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9377E264DFFA400D38BBF /* AddMedsTypeSelectorOutput.swift */; };
-		89F93788264DFFA400D38BBF /* AddMedsTypeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93780264DFFA400D38BBF /* AddMedsTypeSelectorView.swift */; };
-		89F93789264DFFA400D38BBF /* AddMedsTypeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93781264DFFA400D38BBF /* AddMedsTypeSelectorViewController.swift */; };
-		89F93798264E26C900D38BBF /* BarcodeMedsScanerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9378E264E26C900D38BBF /* BarcodeMedsScanerViewModelProtocol.swift */; };
-		89F93799264E26C900D38BBF /* BarcodeMedsScanerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9378F264E26C900D38BBF /* BarcodeMedsScanerViewModel.swift */; };
-		89F9379A264E26C900D38BBF /* BarcodeMedsScanerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93791264E26C900D38BBF /* BarcodeMedsScanerCoordinator.swift */; };
-		89F9379B264E26C900D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93792264E26C900D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift */; };
-		89F9379C264E26C900D38BBF /* BarcodeMedsScanerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93793264E26C900D38BBF /* BarcodeMedsScanerOutput.swift */; };
-		89F9379D264E26C900D38BBF /* BarcodeMedsScanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93795264E26C900D38BBF /* BarcodeMedsScanerViewController.swift */; };
-		89F9379E264E26C900D38BBF /* BarcodeMedsScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93796264E26C900D38BBF /* BarcodeMedsScanerView.swift */; };
-		89F9379F264E26C900D38BBF /* BarcodeMedsScanerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93797264E26C900D38BBF /* BarcodeMedsScanerInput.swift */; };
 		89F937AC264E2CE000D38BBF /* MedsInfoNetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937A3264E2CE000D38BBF /* MedsInfoNetworkServiceProtocol.swift */; };
 		89F937AD264E2CE000D38BBF /* MedsInfoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937A4264E2CE000D38BBF /* MedsInfoNetworkService.swift */; };
 		89F937AE264E2CE000D38BBF /* MedsInfoCompletionTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937A6264E2CE000D38BBF /* MedsInfoCompletionTypealiases.swift */; };
@@ -108,6 +75,51 @@
 		89F937B0264E2CE000D38BBF /* MedsInfoRequestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937A8264E2CE000D38BBF /* MedsInfoRequestResults.swift */; };
 		89F937B1264E2CE000D38BBF /* MedsInfoRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937AA264E2CE000D38BBF /* MedsInfoRequestBuilder.swift */; };
 		89F937B2264E2CE000D38BBF /* MedsInfoRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937AB264E2CE000D38BBF /* MedsInfoRoutes.swift */; };
+		89F937B4264EF81C00D38BBF /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937B3264EF81C00D38BBF /* Medicine.swift */; };
+		89F9380B264F03F400D38BBF /* BarcodeMedsScanerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D0264F03F400D38BBF /* BarcodeMedsScanerViewModelProtocol.swift */; };
+		89F9380C264F03F400D38BBF /* BarcodeMedsScanerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D1264F03F400D38BBF /* BarcodeMedsScanerViewModel.swift */; };
+		89F9380D264F03F400D38BBF /* BarcodeMedsScanerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D3264F03F400D38BBF /* BarcodeMedsScanerCoordinator.swift */; };
+		89F9380E264F03F400D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D4264F03F400D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift */; };
+		89F9380F264F03F400D38BBF /* BarcodeMedsScanerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D5264F03F400D38BBF /* BarcodeMedsScanerOutput.swift */; };
+		89F93810264F03F400D38BBF /* BarcodeMedsScanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D7264F03F400D38BBF /* BarcodeMedsScanerViewController.swift */; };
+		89F93811264F03F400D38BBF /* BarcodeMedsScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D8264F03F400D38BBF /* BarcodeMedsScanerView.swift */; };
+		89F93812264F03F400D38BBF /* BarcodeMedsScanerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937D9264F03F400D38BBF /* BarcodeMedsScanerInput.swift */; };
+		89F93813264F03F400D38BBF /* LoadingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937DC264F03F400D38BBF /* LoadingViewModelProtocol.swift */; };
+		89F93814264F03F400D38BBF /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937DD264F03F400D38BBF /* LoadingViewModel.swift */; };
+		89F93815264F03F400D38BBF /* LoadingOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937DE264F03F400D38BBF /* LoadingOutput.swift */; };
+		89F93816264F03F400D38BBF /* LoadingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E0264F03F400D38BBF /* LoadingCoordinator.swift */; };
+		89F93817264F03F400D38BBF /* LoadingCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E1264F03F400D38BBF /* LoadingCoordinatorProtocol.swift */; };
+		89F93818264F03F400D38BBF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E3264F03F400D38BBF /* LoadingView.swift */; };
+		89F93819264F03F400D38BBF /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E4264F03F400D38BBF /* LoadingViewController.swift */; };
+		89F9381A264F03F400D38BBF /* LoadingInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E5264F03F400D38BBF /* LoadingInput.swift */; };
+		89F9381B264F03F400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E8264F03F400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift */; };
+		89F9381C264F03F400D38BBF /* AddMedsTypeSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937E9264F03F400D38BBF /* AddMedsTypeSelectorViewModel.swift */; };
+		89F9381D264F03F400D38BBF /* AddMedsTypeSelectorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937EA264F03F400D38BBF /* AddMedsTypeSelectorInput.swift */; };
+		89F9381E264F03F400D38BBF /* AddMedsTypeSelectorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937EC264F03F400D38BBF /* AddMedsTypeSelectorCoordinator.swift */; };
+		89F9381F264F03F400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937ED264F03F400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift */; };
+		89F93820264F03F400D38BBF /* TypeOfMedicineToAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937EE264F03F400D38BBF /* TypeOfMedicineToAdd.swift */; };
+		89F93821264F03F400D38BBF /* AddMedsTypeSelectorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937EF264F03F400D38BBF /* AddMedsTypeSelectorOutput.swift */; };
+		89F93822264F03F400D38BBF /* AddMedsTypeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937F1264F03F400D38BBF /* AddMedsTypeSelectorView.swift */; };
+		89F93823264F03F400D38BBF /* AddMedsTypeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937F2264F03F400D38BBF /* AddMedsTypeSelectorViewController.swift */; };
+		89F93824264F03F400D38BBF /* SavedMedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937F5264F03F400D38BBF /* SavedMedsViewModel.swift */; };
+		89F93825264F03F400D38BBF /* SavedMedsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937F6264F03F400D38BBF /* SavedMedsViewModelProtocol.swift */; };
+		89F93826264F03F400D38BBF /* SavedMedsCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937F8264F03F400D38BBF /* SavedMedsCoordinatorProtocol.swift */; };
+		89F93827264F03F400D38BBF /* SavedMedsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937F9264F03F400D38BBF /* SavedMedsCoordinator.swift */; };
+		89F93828264F03F400D38BBF /* SavedMedsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937FA264F03F400D38BBF /* SavedMedsOutput.swift */; };
+		89F93829264F03F400D38BBF /* SavedMedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937FC264F03F400D38BBF /* SavedMedsViewController.swift */; };
+		89F9382A264F03F400D38BBF /* SavedMedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937FD264F03F400D38BBF /* SavedMedsView.swift */; };
+		89F9382B264F03F400D38BBF /* SavedMedsInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F937FE264F03F400D38BBF /* SavedMedsInput.swift */; };
+		89F9382C264F03F400D38BBF /* MedicineEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93801264F03F400D38BBF /* MedicineEditorViewModel.swift */; };
+		89F9382D264F03F400D38BBF /* MedicineEditorViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93802264F03F400D38BBF /* MedicineEditorViewModelProtocol.swift */; };
+		89F9382E264F03F400D38BBF /* MedicineEditorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93804264F03F400D38BBF /* MedicineEditorCoordinator.swift */; };
+		89F9382F264F03F400D38BBF /* MedicineEditorCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93805264F03F400D38BBF /* MedicineEditorCoordinatorProtocol.swift */; };
+		89F93830264F03F400D38BBF /* MedicineEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93807264F03F400D38BBF /* MedicineEditorViewController.swift */; };
+		89F93831264F03F400D38BBF /* MedicineEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93808264F03F400D38BBF /* MedicineEditorView.swift */; };
+		89F93832264F03F400D38BBF /* MedicineEditorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93809264F03F400D38BBF /* MedicineEditorInput.swift */; };
+		89F93833264F03F400D38BBF /* MedicineEditorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9380A264F03F400D38BBF /* MedicineEditorOutput.swift */; };
+		89F93837264F041500D38BBF /* UserStoriesModulesAccounting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93836264F041500D38BBF /* UserStoriesModulesAccounting.swift */; };
+		89F93839264F049700D38BBF /* SavedMedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F93838264F049700D38BBF /* SavedMedicineTableViewCell.swift */; };
+		89F9383B264FF3E100D38BBF /* VibroGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9383A264FF3E000D38BBF /* VibroGenerator.swift */; };
 		C36D8F4FA77B8D006AE5566C /* MedsTrackerUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD759F9CD9B9E514B4B37AE /* MedsTrackerUnitTest.swift */; };
 		DF1A54BB3CC6F77FD5C75172 /* Pods_MedsTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC03FAC3E2653A0CFEC93FAC /* Pods_MedsTracker.framework */; };
 /* End PBXBuildFile section */
@@ -145,7 +157,6 @@
 		8940644E26122B7600DC682F /* NetworkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		8940644F26122B7600DC682F /* DataRequestExecutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequestExecutable.swift; sourceTree = "<group>"; };
 		8940645026122B7600DC682F /* CompletionTypealiasesDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionTypealiasesDefault.swift; sourceTree = "<group>"; };
-		894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoriesModulesAccounting.swift; sourceTree = SOURCE_ROOT; };
 		894064B32612308800DC682F /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		894064B52612308800DC682F /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		894064B62612308800DC682F /* PickerViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewManager.swift; sourceTree = "<group>"; };
@@ -176,14 +187,6 @@
 		894064D52612308800DC682F /* ContentFittingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentFittingTableView.swift; sourceTree = "<group>"; };
 		894064D62612308800DC682F /* TouchClearUIComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchClearUIComponents.swift; sourceTree = "<group>"; };
 		894064D72612308800DC682F /* ButtonWithTouchSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithTouchSize.swift; sourceTree = "<group>"; };
-		8940651F2612327B00DC682F /* LoadingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewModelProtocol.swift; sourceTree = "<group>"; };
-		894065202612327B00DC682F /* LoadingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
-		894065212612327B00DC682F /* LoadingOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOutput.swift; sourceTree = "<group>"; };
-		894065232612327B00DC682F /* LoadingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCoordinator.swift; sourceTree = "<group>"; };
-		894065242612327B00DC682F /* LoadingCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		894065262612327B00DC682F /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		894065272612327B00DC682F /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		894065282612327B00DC682F /* LoadingInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingInput.swift; sourceTree = "<group>"; };
 		894065D626131BEF00DC682F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		894065DC26131C0E00DC682F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		894065E5261328E100DC682F /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
@@ -200,31 +203,7 @@
 		89F00A502542E16200D482F6 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		89F00A522542E16200D482F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F00A532542E16200D482F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		89F9374A264DF6E400D38BBF /* SavedMedsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsViewModel.swift; sourceTree = "<group>"; };
-		89F9374B264DF6E400D38BBF /* SavedMedsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsViewModelProtocol.swift; sourceTree = "<group>"; };
-		89F9374D264DF6E400D38BBF /* SavedMedsCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		89F9374E264DF6E400D38BBF /* SavedMedsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsCoordinator.swift; sourceTree = "<group>"; };
-		89F9374F264DF6E400D38BBF /* SavedMedsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsOutput.swift; sourceTree = "<group>"; };
-		89F93751264DF6E400D38BBF /* SavedMedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsViewController.swift; sourceTree = "<group>"; };
-		89F93752264DF6E400D38BBF /* SavedMedsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsView.swift; sourceTree = "<group>"; };
-		89F93753264DF6E400D38BBF /* SavedMedsInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsInput.swift; sourceTree = "<group>"; };
 		89F9375C264DFAC200D38BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89F93778264DFFA400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorViewModelProtocol.swift; sourceTree = "<group>"; };
-		89F93779264DFFA400D38BBF /* AddMedsTypeSelectorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorViewModel.swift; sourceTree = "<group>"; };
-		89F9377A264DFFA400D38BBF /* AddMedsTypeSelectorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorInput.swift; sourceTree = "<group>"; };
-		89F9377C264DFFA400D38BBF /* AddMedsTypeSelectorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorCoordinator.swift; sourceTree = "<group>"; };
-		89F9377D264DFFA400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		89F9377E264DFFA400D38BBF /* AddMedsTypeSelectorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorOutput.swift; sourceTree = "<group>"; };
-		89F93780264DFFA400D38BBF /* AddMedsTypeSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorView.swift; sourceTree = "<group>"; };
-		89F93781264DFFA400D38BBF /* AddMedsTypeSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorViewController.swift; sourceTree = "<group>"; };
-		89F9378E264E26C900D38BBF /* BarcodeMedsScanerViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerViewModelProtocol.swift; sourceTree = "<group>"; };
-		89F9378F264E26C900D38BBF /* BarcodeMedsScanerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerViewModel.swift; sourceTree = "<group>"; };
-		89F93791264E26C900D38BBF /* BarcodeMedsScanerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerCoordinator.swift; sourceTree = "<group>"; };
-		89F93792264E26C900D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		89F93793264E26C900D38BBF /* BarcodeMedsScanerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerOutput.swift; sourceTree = "<group>"; };
-		89F93795264E26C900D38BBF /* BarcodeMedsScanerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerViewController.swift; sourceTree = "<group>"; };
-		89F93796264E26C900D38BBF /* BarcodeMedsScanerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerView.swift; sourceTree = "<group>"; };
-		89F93797264E26C900D38BBF /* BarcodeMedsScanerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerInput.swift; sourceTree = "<group>"; };
 		89F937A3264E2CE000D38BBF /* MedsInfoNetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsInfoNetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		89F937A4264E2CE000D38BBF /* MedsInfoNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsInfoNetworkService.swift; sourceTree = "<group>"; };
 		89F937A6264E2CE000D38BBF /* MedsInfoCompletionTypealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsInfoCompletionTypealiases.swift; sourceTree = "<group>"; };
@@ -232,6 +211,51 @@
 		89F937A8264E2CE000D38BBF /* MedsInfoRequestResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsInfoRequestResults.swift; sourceTree = "<group>"; };
 		89F937AA264E2CE000D38BBF /* MedsInfoRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsInfoRequestBuilder.swift; sourceTree = "<group>"; };
 		89F937AB264E2CE000D38BBF /* MedsInfoRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsInfoRoutes.swift; sourceTree = "<group>"; };
+		89F937B3264EF81C00D38BBF /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		89F937D0264F03F400D38BBF /* BarcodeMedsScanerViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerViewModelProtocol.swift; sourceTree = "<group>"; };
+		89F937D1264F03F400D38BBF /* BarcodeMedsScanerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerViewModel.swift; sourceTree = "<group>"; };
+		89F937D3264F03F400D38BBF /* BarcodeMedsScanerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerCoordinator.swift; sourceTree = "<group>"; };
+		89F937D4264F03F400D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89F937D5264F03F400D38BBF /* BarcodeMedsScanerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerOutput.swift; sourceTree = "<group>"; };
+		89F937D7264F03F400D38BBF /* BarcodeMedsScanerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerViewController.swift; sourceTree = "<group>"; };
+		89F937D8264F03F400D38BBF /* BarcodeMedsScanerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerView.swift; sourceTree = "<group>"; };
+		89F937D9264F03F400D38BBF /* BarcodeMedsScanerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeMedsScanerInput.swift; sourceTree = "<group>"; };
+		89F937DC264F03F400D38BBF /* LoadingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewModelProtocol.swift; sourceTree = "<group>"; };
+		89F937DD264F03F400D38BBF /* LoadingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
+		89F937DE264F03F400D38BBF /* LoadingOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOutput.swift; sourceTree = "<group>"; };
+		89F937E0264F03F400D38BBF /* LoadingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCoordinator.swift; sourceTree = "<group>"; };
+		89F937E1264F03F400D38BBF /* LoadingCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89F937E3264F03F400D38BBF /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		89F937E4264F03F400D38BBF /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		89F937E5264F03F400D38BBF /* LoadingInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingInput.swift; sourceTree = "<group>"; };
+		89F937E8264F03F400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorViewModelProtocol.swift; sourceTree = "<group>"; };
+		89F937E9264F03F400D38BBF /* AddMedsTypeSelectorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorViewModel.swift; sourceTree = "<group>"; };
+		89F937EA264F03F400D38BBF /* AddMedsTypeSelectorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorInput.swift; sourceTree = "<group>"; };
+		89F937EC264F03F400D38BBF /* AddMedsTypeSelectorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorCoordinator.swift; sourceTree = "<group>"; };
+		89F937ED264F03F400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89F937EE264F03F400D38BBF /* TypeOfMedicineToAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfMedicineToAdd.swift; sourceTree = "<group>"; };
+		89F937EF264F03F400D38BBF /* AddMedsTypeSelectorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorOutput.swift; sourceTree = "<group>"; };
+		89F937F1264F03F400D38BBF /* AddMedsTypeSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorView.swift; sourceTree = "<group>"; };
+		89F937F2264F03F400D38BBF /* AddMedsTypeSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedsTypeSelectorViewController.swift; sourceTree = "<group>"; };
+		89F937F5264F03F400D38BBF /* SavedMedsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsViewModel.swift; sourceTree = "<group>"; };
+		89F937F6264F03F400D38BBF /* SavedMedsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsViewModelProtocol.swift; sourceTree = "<group>"; };
+		89F937F8264F03F400D38BBF /* SavedMedsCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89F937F9264F03F400D38BBF /* SavedMedsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsCoordinator.swift; sourceTree = "<group>"; };
+		89F937FA264F03F400D38BBF /* SavedMedsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsOutput.swift; sourceTree = "<group>"; };
+		89F937FC264F03F400D38BBF /* SavedMedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsViewController.swift; sourceTree = "<group>"; };
+		89F937FD264F03F400D38BBF /* SavedMedsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsView.swift; sourceTree = "<group>"; };
+		89F937FE264F03F400D38BBF /* SavedMedsInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMedsInput.swift; sourceTree = "<group>"; };
+		89F93801264F03F400D38BBF /* MedicineEditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorViewModel.swift; sourceTree = "<group>"; };
+		89F93802264F03F400D38BBF /* MedicineEditorViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorViewModelProtocol.swift; sourceTree = "<group>"; };
+		89F93804264F03F400D38BBF /* MedicineEditorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorCoordinator.swift; sourceTree = "<group>"; };
+		89F93805264F03F400D38BBF /* MedicineEditorCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89F93807264F03F400D38BBF /* MedicineEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorViewController.swift; sourceTree = "<group>"; };
+		89F93808264F03F400D38BBF /* MedicineEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorView.swift; sourceTree = "<group>"; };
+		89F93809264F03F400D38BBF /* MedicineEditorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorInput.swift; sourceTree = "<group>"; };
+		89F9380A264F03F400D38BBF /* MedicineEditorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineEditorOutput.swift; sourceTree = "<group>"; };
+		89F93836264F041500D38BBF /* UserStoriesModulesAccounting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoriesModulesAccounting.swift; sourceTree = SOURCE_ROOT; };
+		89F93838264F049700D38BBF /* SavedMedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMedicineTableViewCell.swift; sourceTree = "<group>"; };
+		89F9383A264FF3E000D38BBF /* VibroGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibroGenerator.swift; sourceTree = "<group>"; };
 		AA50F899D423B5FD91BAA4EB /* Pods-MedsTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedsTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-MedsTrackerTests/Pods-MedsTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C478B2B98E37F18BAC093DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEE75E08BB0BFE44AD9046BF /* MedsTrackerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; name = MedsTrackerTests.xctest; path = MedsTracker.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,6 +488,7 @@
 				894064D52612308800DC682F /* ContentFittingTableView.swift */,
 				894064D62612308800DC682F /* TouchClearUIComponents.swift */,
 				894064D72612308800DC682F /* ButtonWithTouchSize.swift */,
+				89F9383A264FF3E000D38BBF /* VibroGenerator.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -475,45 +500,6 @@
 				894064D22612308800DC682F /* SegmentedControl.swift */,
 			);
 			path = SegmentedControl;
-			sourceTree = "<group>";
-		};
-		8940651D2612327B00DC682F /* Loading */ = {
-			isa = PBXGroup;
-			children = (
-				894065282612327B00DC682F /* LoadingInput.swift */,
-				894065212612327B00DC682F /* LoadingOutput.swift */,
-				8940651E2612327B00DC682F /* ViewModel */,
-				894065222612327B00DC682F /* Coordinator */,
-				894065252612327B00DC682F /* View */,
-			);
-			path = Loading;
-			sourceTree = "<group>";
-		};
-		8940651E2612327B00DC682F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				8940651F2612327B00DC682F /* LoadingViewModelProtocol.swift */,
-				894065202612327B00DC682F /* LoadingViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		894065222612327B00DC682F /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				894065232612327B00DC682F /* LoadingCoordinator.swift */,
-				894065242612327B00DC682F /* LoadingCoordinatorProtocol.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		894065252612327B00DC682F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				894065272612327B00DC682F /* LoadingViewController.swift */,
-				894065262612327B00DC682F /* LoadingView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		894065E3261328E100DC682F /* Fonts */ = {
@@ -598,6 +584,7 @@
 		89F00A542542E16200D482F6 /* ModelsLayer */ = {
 			isa = PBXGroup;
 			children = (
+				89F937B3264EF81C00D38BBF /* Medicine.swift */,
 			);
 			path = ModelsLayer;
 			sourceTree = "<group>";
@@ -606,138 +593,9 @@
 			isa = PBXGroup;
 			children = (
 				894064B12612308800DC682F /* Common */,
-				89F00A692542E16200D482F6 /* UserStories */,
+				89F937CD264F03F400D38BBF /* UserStories */,
 			);
 			path = PresentationLayer;
-			sourceTree = "<group>";
-		};
-		89F00A692542E16200D482F6 /* UserStories */ = {
-			isa = PBXGroup;
-			children = (
-				894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */,
-				8940651D2612327B00DC682F /* Loading */,
-				89F93748264DF6E400D38BBF /* SavedMeds */,
-				89F93776264DFFA400D38BBF /* AddMedsTypeSelector */,
-				89F9378C264E26C900D38BBF /* BarcodeMedsScaner */,
-			);
-			path = UserStories;
-			sourceTree = "<group>";
-		};
-		89F93748264DF6E400D38BBF /* SavedMeds */ = {
-			isa = PBXGroup;
-			children = (
-				89F9374F264DF6E400D38BBF /* SavedMedsOutput.swift */,
-				89F93753264DF6E400D38BBF /* SavedMedsInput.swift */,
-				89F93749264DF6E400D38BBF /* ViewModel */,
-				89F9374C264DF6E400D38BBF /* Coordinator */,
-				89F93750264DF6E400D38BBF /* View */,
-			);
-			path = SavedMeds;
-			sourceTree = "<group>";
-		};
-		89F93749264DF6E400D38BBF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				89F9374A264DF6E400D38BBF /* SavedMedsViewModel.swift */,
-				89F9374B264DF6E400D38BBF /* SavedMedsViewModelProtocol.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		89F9374C264DF6E400D38BBF /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				89F9374D264DF6E400D38BBF /* SavedMedsCoordinatorProtocol.swift */,
-				89F9374E264DF6E400D38BBF /* SavedMedsCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		89F93750264DF6E400D38BBF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				89F93751264DF6E400D38BBF /* SavedMedsViewController.swift */,
-				89F93752264DF6E400D38BBF /* SavedMedsView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		89F93776264DFFA400D38BBF /* AddMedsTypeSelector */ = {
-			isa = PBXGroup;
-			children = (
-				89F9377A264DFFA400D38BBF /* AddMedsTypeSelectorInput.swift */,
-				89F9377E264DFFA400D38BBF /* AddMedsTypeSelectorOutput.swift */,
-				89F93777264DFFA400D38BBF /* ViewModel */,
-				89F9377B264DFFA400D38BBF /* Coordinator */,
-				89F9377F264DFFA400D38BBF /* View */,
-			);
-			path = AddMedsTypeSelector;
-			sourceTree = "<group>";
-		};
-		89F93777264DFFA400D38BBF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				89F93778264DFFA400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift */,
-				89F93779264DFFA400D38BBF /* AddMedsTypeSelectorViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		89F9377B264DFFA400D38BBF /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				89F9377C264DFFA400D38BBF /* AddMedsTypeSelectorCoordinator.swift */,
-				89F9377D264DFFA400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		89F9377F264DFFA400D38BBF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				89F93781264DFFA400D38BBF /* AddMedsTypeSelectorViewController.swift */,
-				89F93780264DFFA400D38BBF /* AddMedsTypeSelectorView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		89F9378C264E26C900D38BBF /* BarcodeMedsScaner */ = {
-			isa = PBXGroup;
-			children = (
-				89F93797264E26C900D38BBF /* BarcodeMedsScanerInput.swift */,
-				89F93793264E26C900D38BBF /* BarcodeMedsScanerOutput.swift */,
-				89F93790264E26C900D38BBF /* Coordinator */,
-				89F9378D264E26C900D38BBF /* ViewModel */,
-				89F93794264E26C900D38BBF /* View */,
-			);
-			path = BarcodeMedsScaner;
-			sourceTree = "<group>";
-		};
-		89F9378D264E26C900D38BBF /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				89F9378E264E26C900D38BBF /* BarcodeMedsScanerViewModelProtocol.swift */,
-				89F9378F264E26C900D38BBF /* BarcodeMedsScanerViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		89F93790264E26C900D38BBF /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				89F93791264E26C900D38BBF /* BarcodeMedsScanerCoordinator.swift */,
-				89F93792264E26C900D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		89F93794264E26C900D38BBF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				89F93795264E26C900D38BBF /* BarcodeMedsScanerViewController.swift */,
-				89F93796264E26C900D38BBF /* BarcodeMedsScanerView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		89F937A2264E2CE000D38BBF /* MedsInfoNetworkService */ = {
@@ -768,6 +626,216 @@
 				89F937AA264E2CE000D38BBF /* MedsInfoRequestBuilder.swift */,
 			);
 			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		89F937CD264F03F400D38BBF /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				89F93836264F041500D38BBF /* UserStoriesModulesAccounting.swift */,
+				89F937DA264F03F400D38BBF /* Loading */,
+				89F937F3264F03F400D38BBF /* SavedMeds */,
+				89F937E6264F03F400D38BBF /* AddMedsTypeSelector */,
+				89F937CE264F03F400D38BBF /* BarcodeMedsScaner */,
+				89F937FF264F03F400D38BBF /* MedicineEditor */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		89F937CE264F03F400D38BBF /* BarcodeMedsScaner */ = {
+			isa = PBXGroup;
+			children = (
+				89F937CF264F03F400D38BBF /* ViewModel */,
+				89F937D2264F03F400D38BBF /* Coordinator */,
+				89F937D5264F03F400D38BBF /* BarcodeMedsScanerOutput.swift */,
+				89F937D6264F03F400D38BBF /* View */,
+				89F937D9264F03F400D38BBF /* BarcodeMedsScanerInput.swift */,
+			);
+			path = BarcodeMedsScaner;
+			sourceTree = "<group>";
+		};
+		89F937CF264F03F400D38BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89F937D0264F03F400D38BBF /* BarcodeMedsScanerViewModelProtocol.swift */,
+				89F937D1264F03F400D38BBF /* BarcodeMedsScanerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89F937D2264F03F400D38BBF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89F937D3264F03F400D38BBF /* BarcodeMedsScanerCoordinator.swift */,
+				89F937D4264F03F400D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89F937D6264F03F400D38BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89F937D7264F03F400D38BBF /* BarcodeMedsScanerViewController.swift */,
+				89F937D8264F03F400D38BBF /* BarcodeMedsScanerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89F937DA264F03F400D38BBF /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				89F937DB264F03F400D38BBF /* ViewModel */,
+				89F937DE264F03F400D38BBF /* LoadingOutput.swift */,
+				89F937DF264F03F400D38BBF /* Coordinator */,
+				89F937E2264F03F400D38BBF /* View */,
+				89F937E5264F03F400D38BBF /* LoadingInput.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		89F937DB264F03F400D38BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89F937DC264F03F400D38BBF /* LoadingViewModelProtocol.swift */,
+				89F937DD264F03F400D38BBF /* LoadingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89F937DF264F03F400D38BBF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89F937E0264F03F400D38BBF /* LoadingCoordinator.swift */,
+				89F937E1264F03F400D38BBF /* LoadingCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89F937E2264F03F400D38BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89F937E3264F03F400D38BBF /* LoadingView.swift */,
+				89F937E4264F03F400D38BBF /* LoadingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89F937E6264F03F400D38BBF /* AddMedsTypeSelector */ = {
+			isa = PBXGroup;
+			children = (
+				89F937E7264F03F400D38BBF /* ViewModel */,
+				89F937EA264F03F400D38BBF /* AddMedsTypeSelectorInput.swift */,
+				89F937EB264F03F400D38BBF /* Coordinator */,
+				89F937EE264F03F400D38BBF /* TypeOfMedicineToAdd.swift */,
+				89F937EF264F03F400D38BBF /* AddMedsTypeSelectorOutput.swift */,
+				89F937F0264F03F400D38BBF /* View */,
+			);
+			path = AddMedsTypeSelector;
+			sourceTree = "<group>";
+		};
+		89F937E7264F03F400D38BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89F937E8264F03F400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift */,
+				89F937E9264F03F400D38BBF /* AddMedsTypeSelectorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89F937EB264F03F400D38BBF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89F937EC264F03F400D38BBF /* AddMedsTypeSelectorCoordinator.swift */,
+				89F937ED264F03F400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89F937F0264F03F400D38BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89F937F1264F03F400D38BBF /* AddMedsTypeSelectorView.swift */,
+				89F937F2264F03F400D38BBF /* AddMedsTypeSelectorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89F937F3264F03F400D38BBF /* SavedMeds */ = {
+			isa = PBXGroup;
+			children = (
+				89F937FE264F03F400D38BBF /* SavedMedsInput.swift */,
+				89F937FA264F03F400D38BBF /* SavedMedsOutput.swift */,
+				89F937F4264F03F400D38BBF /* ViewModel */,
+				89F937F7264F03F400D38BBF /* Coordinator */,
+				89F937FB264F03F400D38BBF /* View */,
+			);
+			path = SavedMeds;
+			sourceTree = "<group>";
+		};
+		89F937F4264F03F400D38BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89F937F5264F03F400D38BBF /* SavedMedsViewModel.swift */,
+				89F937F6264F03F400D38BBF /* SavedMedsViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89F937F7264F03F400D38BBF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89F937F8264F03F400D38BBF /* SavedMedsCoordinatorProtocol.swift */,
+				89F937F9264F03F400D38BBF /* SavedMedsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89F937FB264F03F400D38BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89F937FC264F03F400D38BBF /* SavedMedsViewController.swift */,
+				89F937FD264F03F400D38BBF /* SavedMedsView.swift */,
+				89F93838264F049700D38BBF /* SavedMedicineTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89F937FF264F03F400D38BBF /* MedicineEditor */ = {
+			isa = PBXGroup;
+			children = (
+				89F93809264F03F400D38BBF /* MedicineEditorInput.swift */,
+				89F9380A264F03F400D38BBF /* MedicineEditorOutput.swift */,
+				89F93800264F03F400D38BBF /* ViewModel */,
+				89F93803264F03F400D38BBF /* Coordinator */,
+				89F93806264F03F400D38BBF /* View */,
+			);
+			path = MedicineEditor;
+			sourceTree = "<group>";
+		};
+		89F93800264F03F400D38BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89F93801264F03F400D38BBF /* MedicineEditorViewModel.swift */,
+				89F93802264F03F400D38BBF /* MedicineEditorViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89F93803264F03F400D38BBF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89F93804264F03F400D38BBF /* MedicineEditorCoordinator.swift */,
+				89F93805264F03F400D38BBF /* MedicineEditorCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89F93806264F03F400D38BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89F93807264F03F400D38BBF /* MedicineEditorViewController.swift */,
+				89F93808264F03F400D38BBF /* MedicineEditorView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AA79B48E92F24FB535E09EA5 /* SupportingFiles */ = {
@@ -1017,95 +1085,107 @@
 			files = (
 				894064EF2612308800DC682F /* AnnouncementViewController.swift in Sources */,
 				894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */,
-				89F93798264E26C900D38BBF /* BarcodeMedsScanerViewModelProtocol.swift in Sources */,
 				894064F12612308800DC682F /* SegmentedControl.swift in Sources */,
-				89F93799264E26C900D38BBF /* BarcodeMedsScanerViewModel.swift in Sources */,
-				8940652A2612327C00DC682F /* LoadingViewModel.swift in Sources */,
-				89F93787264DFFA400D38BBF /* AddMedsTypeSelectorOutput.swift in Sources */,
+				89F9382E264F03F400D38BBF /* MedicineEditorCoordinator.swift in Sources */,
+				89F937B4264EF81C00D38BBF /* Medicine.swift in Sources */,
+				89F93833264F03F400D38BBF /* MedicineEditorOutput.swift in Sources */,
 				894064F32612308800DC682F /* ArrowDownButton.swift in Sources */,
-				89F9375A264DF6E400D38BBF /* SavedMedsView.swift in Sources */,
+				89F93818264F03F400D38BBF /* LoadingView.swift in Sources */,
+				89F93830264F03F400D38BBF /* MedicineEditorViewController.swift in Sources */,
 				894064DA2612308800DC682F /* PickerViewManager.swift in Sources */,
 				894064E72612308800DC682F /* UIScrollView+ScrollToBottom.swift in Sources */,
-				894064A226122D0100DC682F /* UserStoriesModulesAccounting.swift in Sources */,
-				89F9379C264E26C900D38BBF /* BarcodeMedsScanerOutput.swift in Sources */,
 				89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */,
 				89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */,
+				89F9381B264F03F400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift in Sources */,
 				89F937AD264E2CE000D38BBF /* MedsInfoNetworkService.swift in Sources */,
 				892B1FA3261D2EA200329B0A /* Array+safeIndex.swift in Sources */,
 				89F937AE264E2CE000D38BBF /* MedsInfoCompletionTypealiases.swift in Sources */,
-				89F93756264DF6E400D38BBF /* SavedMedsCoordinatorProtocol.swift in Sources */,
 				89F00AB22542E16200D482F6 /* ApplicationAssembly.swift in Sources */,
-				89F93784264DFFA400D38BBF /* AddMedsTypeSelectorInput.swift in Sources */,
 				89F937AF264E2CE000D38BBF /* MedsInfoErrors.swift in Sources */,
-				89F93759264DF6E400D38BBF /* SavedMedsViewController.swift in Sources */,
+				89F93810264F03F400D38BBF /* BarcodeMedsScanerViewController.swift in Sources */,
 				89F937B0264E2CE000D38BBF /* MedsInfoRequestResults.swift in Sources */,
+				89F93837264F041500D38BBF /* UserStoriesModulesAccounting.swift in Sources */,
+				89F9380F264F03F400D38BBF /* BarcodeMedsScanerOutput.swift in Sources */,
+				89F93814264F03F400D38BBF /* LoadingViewModel.swift in Sources */,
 				894064E32612308800DC682F /* UIImage+overlayedColor.swift in Sources */,
-				8940652B2612327C00DC682F /* LoadingOutput.swift in Sources */,
+				89F93828264F03F400D38BBF /* SavedMedsOutput.swift in Sources */,
+				89F93825264F03F400D38BBF /* SavedMedsViewModelProtocol.swift in Sources */,
 				89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */,
-				89F9379F264E26C900D38BBF /* BarcodeMedsScanerInput.swift in Sources */,
-				8940652F2612327C00DC682F /* LoadingViewController.swift in Sources */,
-				89F93786264DFFA400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift in Sources */,
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
-				89F93755264DF6E400D38BBF /* SavedMedsViewModelProtocol.swift in Sources */,
+				89F9381A264F03F400D38BBF /* LoadingInput.swift in Sources */,
+				89F9381F264F03F400D38BBF /* AddMedsTypeSelectorCoordinatorProtocol.swift in Sources */,
+				89F9383B264FF3E100D38BBF /* VibroGenerator.swift in Sources */,
 				892B1FA2261D2EA200329B0A /* Bundle+info.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
 				894064D82612308800DC682F /* AlertManager.swift in Sources */,
-				89F9379A264E26C900D38BBF /* BarcodeMedsScanerCoordinator.swift in Sources */,
+				89F93811264F03F400D38BBF /* BarcodeMedsScanerView.swift in Sources */,
 				8940645126122B7600DC682F /* CustomPatchEncoding.swift in Sources */,
-				89F9379B264E26C900D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift in Sources */,
 				894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */,
 				897FC3D9261690DC002352E7 /* UIViewController+alert.swift in Sources */,
+				89F93831264F03F400D38BBF /* MedicineEditorView.swift in Sources */,
+				89F93815264F03F400D38BBF /* LoadingOutput.swift in Sources */,
 				89F937B1264E2CE000D38BBF /* MedsInfoRequestBuilder.swift in Sources */,
+				89F9382D264F03F400D38BBF /* MedicineEditorViewModelProtocol.swift in Sources */,
+				89F93819264F03F400D38BBF /* LoadingViewController.swift in Sources */,
+				89F93827264F03F400D38BBF /* SavedMedsCoordinator.swift in Sources */,
 				89F937B2264E2CE000D38BBF /* MedsInfoRoutes.swift in Sources */,
 				894064EE2612308800DC682F /* PaddingLabel.swift in Sources */,
-				89F93788264DFFA400D38BBF /* AddMedsTypeSelectorView.swift in Sources */,
-				89F9375B264DF6E400D38BBF /* SavedMedsInput.swift in Sources */,
-				89F93783264DFFA400D38BBF /* AddMedsTypeSelectorViewModel.swift in Sources */,
-				89F93758264DF6E400D38BBF /* SavedMedsOutput.swift in Sources */,
-				8940652C2612327C00DC682F /* LoadingCoordinator.swift in Sources */,
+				89F9382F264F03F400D38BBF /* MedicineEditorCoordinatorProtocol.swift in Sources */,
 				894064F52612308800DC682F /* TouchClearUIComponents.swift in Sources */,
 				894064E22612308800DC682F /* String+SizeCalculator.swift in Sources */,
 				892B1FA4261D2EA200329B0A /* String+capitalizingFirstLetter.swift in Sources */,
+				89F9381C264F03F400D38BBF /* AddMedsTypeSelectorViewModel.swift in Sources */,
+				89F93821264F03F400D38BBF /* AddMedsTypeSelectorOutput.swift in Sources */,
+				89F9381D264F03F400D38BBF /* AddMedsTypeSelectorInput.swift in Sources */,
 				8940645626122B7600DC682F /* DataRequestExecutable.swift in Sources */,
-				89F93789264DFFA400D38BBF /* AddMedsTypeSelectorViewController.swift in Sources */,
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
-				89F93754264DF6E400D38BBF /* SavedMedsViewModel.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
-				89F93757264DF6E400D38BBF /* SavedMedsCoordinator.swift in Sources */,
+				89F93813264F03F400D38BBF /* LoadingViewModelProtocol.swift in Sources */,
+				89F9380B264F03F400D38BBF /* BarcodeMedsScanerViewModelProtocol.swift in Sources */,
+				89F93812264F03F400D38BBF /* BarcodeMedsScanerInput.swift in Sources */,
+				89F93822264F03F400D38BBF /* AddMedsTypeSelectorView.swift in Sources */,
 				8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */,
 				89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */,
 				894064DC2612308800DC682F /* UIView+layerAnimation.swift in Sources */,
 				894064E52612308800DC682F /* UIView+shake.swift in Sources */,
+				89F93820264F03F400D38BBF /* TypeOfMedicineToAdd.swift in Sources */,
 				8940645426122B7600DC682F /* NetworkService.swift in Sources */,
+				89F93817264F03F400D38BBF /* LoadingCoordinatorProtocol.swift in Sources */,
+				89F9381E264F03F400D38BBF /* AddMedsTypeSelectorCoordinator.swift in Sources */,
 				8940645326122B7600DC682F /* DataParser.swift in Sources */,
+				89F9382C264F03F400D38BBF /* MedicineEditorViewModel.swift in Sources */,
 				894064E62612308800DC682F /* UIColor+rgba.swift in Sources */,
-				894065302612327C00DC682F /* LoadingInput.swift in Sources */,
+				89F93824264F03F400D38BBF /* SavedMedsViewModel.swift in Sources */,
 				894064EB2612308800DC682F /* UIViewController+ModuleTransitionHandler.swift in Sources */,
+				89F9382B264F03F400D38BBF /* SavedMedsInput.swift in Sources */,
 				89F937AC264E2CE000D38BBF /* MedsInfoNetworkServiceProtocol.swift in Sources */,
-				89F93785264DFFA400D38BBF /* AddMedsTypeSelectorCoordinator.swift in Sources */,
+				89F93826264F03F400D38BBF /* SavedMedsCoordinatorProtocol.swift in Sources */,
+				89F9380C264F03F400D38BBF /* BarcodeMedsScanerViewModel.swift in Sources */,
+				89F93829264F03F400D38BBF /* SavedMedsViewController.swift in Sources */,
 				894064DD2612308800DC682F /* UIView+RoundedCorners.swift in Sources */,
-				89F9379D264E26C900D38BBF /* BarcodeMedsScanerViewController.swift in Sources */,
-				89F93782264DFFA400D38BBF /* AddMedsTypeSelectorViewModelProtocol.swift in Sources */,
+				89F9380E264F03F400D38BBF /* BarcodeMedsScanerCoordinatorProtocol.swift in Sources */,
 				894064E42612308800DC682F /* UIImage+merge.swift in Sources */,
 				894064F02612308800DC682F /* LabelsSegmentedControl.swift in Sources */,
 				894064F62612308800DC682F /* ButtonWithTouchSize.swift in Sources */,
 				892B1FA0261D2EA200329B0A /* UserDefaults+color.swift in Sources */,
-				894065292612327C00DC682F /* LoadingViewModelProtocol.swift in Sources */,
 				894064F42612308800DC682F /* ContentFittingTableView.swift in Sources */,
+				89F93823264F03F400D38BBF /* AddMedsTypeSelectorViewController.swift in Sources */,
+				89F93816264F03F400D38BBF /* LoadingCoordinator.swift in Sources */,
+				89F93839264F049700D38BBF /* SavedMedicineTableViewCell.swift in Sources */,
 				894064DE2612308800DC682F /* UIViewController+Keyboard.swift in Sources */,
 				894064E92612308800DC682F /* UIStyleManager.swift in Sources */,
-				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
-				8940652D2612327C00DC682F /* LoadingCoordinatorProtocol.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
 				892B1F9F261D2EA200329B0A /* SKProduct+localizedPrice.swift in Sources */,
+				89F9382A264F03F400D38BBF /* SavedMedsView.swift in Sources */,
+				89F93832264F03F400D38BBF /* MedicineEditorInput.swift in Sources */,
 				894064EC2612308800DC682F /* DefaultCoordinator.swift in Sources */,
 				892B1FA1261D2EA200329B0A /* Array+weakObjects.swift in Sources */,
 				894064EA2612308800DC682F /* ModuleTransitionHandler.swift in Sources */,
+				89F9380D264F03F400D38BBF /* BarcodeMedsScanerCoordinator.swift in Sources */,
 				8940645726122B7600DC682F /* CompletionTypealiasesDefault.swift in Sources */,
-				89F9379E264E26C900D38BBF /* BarcodeMedsScanerView.swift in Sources */,
 				892B1FAE261D2F1B00329B0A /* CACornerMask+typealias.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
