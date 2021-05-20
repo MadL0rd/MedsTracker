@@ -722,11 +722,11 @@
 		89F937E6264F03F400D38BBF /* AddMedsTypeSelector */ = {
 			isa = PBXGroup;
 			children = (
-				89F937E7264F03F400D38BBF /* ViewModel */,
-				89F937EA264F03F400D38BBF /* AddMedsTypeSelectorInput.swift */,
-				89F937EB264F03F400D38BBF /* Coordinator */,
 				89F937EE264F03F400D38BBF /* TypeOfMedicineToAdd.swift */,
+				89F937EA264F03F400D38BBF /* AddMedsTypeSelectorInput.swift */,
 				89F937EF264F03F400D38BBF /* AddMedsTypeSelectorOutput.swift */,
+				89F937E7264F03F400D38BBF /* ViewModel */,
+				89F937EB264F03F400D38BBF /* Coordinator */,
 				89F937F0264F03F400D38BBF /* View */,
 			);
 			path = AddMedsTypeSelector;
@@ -753,8 +753,8 @@
 		89F937F0264F03F400D38BBF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				89F937F1264F03F400D38BBF /* AddMedsTypeSelectorView.swift */,
 				89F937F2264F03F400D38BBF /* AddMedsTypeSelectorViewController.swift */,
+				89F937F1264F03F400D38BBF /* AddMedsTypeSelectorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -804,8 +804,8 @@
 			children = (
 				89F93809264F03F400D38BBF /* MedicineEditorInput.swift */,
 				89F9380A264F03F400D38BBF /* MedicineEditorOutput.swift */,
-				89F93800264F03F400D38BBF /* ViewModel */,
 				89F93803264F03F400D38BBF /* Coordinator */,
+				89F93800264F03F400D38BBF /* ViewModel */,
 				89F93806264F03F400D38BBF /* View */,
 			);
 			path = MedicineEditor;

@@ -8,4 +8,6 @@
 protocol MedicineEditorViewModelProtocol: AnyObject {
     
     var output: MedicineEditorOutput? { get }
+    
+    var medicine: Medicine? { get set }
 }

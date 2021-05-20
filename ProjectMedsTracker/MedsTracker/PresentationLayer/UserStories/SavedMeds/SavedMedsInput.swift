@@ -8,4 +8,5 @@
 protocol CustomizableSavedMedsViewModel: AnyObject {
     
     var output: SavedMedsOutput? { get set }
+    
 }

@@ -79,7 +79,7 @@ extension SavedMedsViewController: UITableViewDataSource, UITableViewDelegate, S
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        coordinator.openMedsEditor(medicine: savedMeds[indexPath.row], output: self)
     }
     
     func takeMedicine(_ cell: SavedMedicineTableViewCell, countMedsToTake: Int) {

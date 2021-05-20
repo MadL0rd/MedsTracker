@@ -36,3 +36,6 @@
 // Meds search
 "medicineNotFound" = "Лекарство не найдено";
 "success" = "Удалось чое-что найти!";
+
+// Meds editor
+"info" = "Информация";

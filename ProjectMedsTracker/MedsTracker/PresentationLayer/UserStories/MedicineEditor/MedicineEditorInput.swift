@@ -8,6 +8,6 @@
 protocol CustomizableMedicineEditorViewModel: AnyObject {
     
     var output: MedicineEditorOutput? { get set }
-    
-    func setMedicine(_ medicine: Medicine)
+
+    var medicine: Medicine? { get set }
 }

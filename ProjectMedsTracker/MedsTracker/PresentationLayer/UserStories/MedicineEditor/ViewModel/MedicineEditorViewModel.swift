@@ -7,14 +7,13 @@
 
 final class MedicineEditorViewModel {
 	var output: MedicineEditorOutput?
+    
+    var medicine: Medicine?
 }
 
 // MARK: - Configuration
 extension MedicineEditorViewModel: CustomizableMedicineEditorViewModel {
     
-    func setMedicine(_ medicine: Medicine) {
-        //        TODO: <#Issue text#>
-    }
 }
 
 // MARK: - Interface for view

@@ -30,4 +30,11 @@ final class SavedMedsCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension SavedMedsCoordinator: SavedMedsCoordinatorProtocol {
 
+    func openMedsEditor(medicine: Medicine, output: MedicineEditorOutput) {
+        let vc = MedicineEditorCoordinator.createModule { viewModel in
+            viewModel.output = output
+            viewModel.medicine = medicine
+        }
+        transition.showInRootNavigationController(vc)
+    }
 }

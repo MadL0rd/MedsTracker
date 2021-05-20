@@ -36,3 +36,6 @@
 // Meds search
 "medicineNotFound" = "Sorry, we can not find your medicine";
 "success" = "Sucess!";
+
+// Meds editor
+"info" = "Information";

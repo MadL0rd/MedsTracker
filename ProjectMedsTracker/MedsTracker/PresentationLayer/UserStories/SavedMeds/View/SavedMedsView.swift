@@ -11,7 +11,7 @@ final class SavedMedsView: UIView {
     
     let addMedicineButton = ButtonWithTouchSize()
     
-    var blurEffectView: UIVisualEffectView!
+    var blurEffectView: UIView!
     let topLogo = UIImageView()
     let noMedicineLabel = UILabel()
     let savedMedsTable = UITableView()
@@ -56,6 +56,7 @@ final class SavedMedsView: UIView {
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
         blurEffectView = UIVisualEffectView(effect: blurEffect)
         addSubview(blurEffectView)
+        blurEffectView.backgroundColor = R.color.backgroundLight()
         blurEffectView.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(topLogo)

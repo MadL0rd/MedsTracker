@@ -34,5 +34,36 @@ final class MedicineEditorViewController: UIViewController {
 
     private func configureSelf() {
         
+        setupMedicine()
+    }
+    
+    private func setupMedicine() {
+        guard let medicine = viewModel.medicine
+        else { return }
+        
+        if let _ = medicine.url {
+            _view.aboutButton.addTarget(self, action: #selector(infoButtonTapped(sender:)), for: .touchUpInside)
+            _view.aboutKekButton.addTarget(self, action: #selector(infoButtonTapped(sender:)), for: .touchUpInside)
+            let menuBarItem = UIBarButtonItem(customView: _view.aboutButton)
+            navigationItem.rightBarButtonItem = menuBarItem
+        }
+        
+        _view.titleLabel.text = medicine.title
+        _view.infoLabel.text = medicine.textInfo
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 30
+        let attributedString = NSMutableAttributedString(string: medicine.textInfo!,
+                                                         attributes: [ .paragraphStyle: paragraphStyle ])
+        _view.infoLabel.attributedText = attributedString
+    }
+    
+    // MARK: - UI elements actions
+
+    @objc private func infoButtonTapped(sender: UIView) {
+        sender.tapAnimation()
+        guard let url = URL(string: viewModel.medicine?.url ?? "")
+        else { return }
+        UIApplication.shared.open(url)
     }
 }

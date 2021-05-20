@@ -7,4 +7,5 @@
 
 protocol SavedMedsCoordinatorProtocol: DefaultCoordinatorProtocol {
     
+    func openMedsEditor(medicine: Medicine, output: MedicineEditorOutput)
 }
